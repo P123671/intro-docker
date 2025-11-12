@@ -1,2 +1,2 @@
 FROM busybox
-CMD ["sh"]
+ENTRYPOINT ["/bin/ping"]
