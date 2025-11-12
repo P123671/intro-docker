@@ -1,4 +1,4 @@
 FROM ubuntu
-RUN apt install nginx
+RUN apt update && apt install -y nginx
 EXPOSE 8080
-CMD [""]
+CMD ["nginx", "-g", "daemon off;"]
