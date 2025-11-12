@@ -1,4 +1,2 @@
-FROM ubuntu
-RUN apt update && apt install -y nginx
-EXPOSE 8080
-CMD ["nginx", "-g", "daemon off;"]
+FROM busybox
+HEALTHCHECK --interval=5s CMD ping -c 172.17.0.3
