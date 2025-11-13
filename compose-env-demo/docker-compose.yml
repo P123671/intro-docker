@@ -1,5 +1,5 @@
 version: "3.9"
- 
+
 services:
   web:
     build: ./app
@@ -9,3 +9,4 @@ services:
       APP_ENV: ${APP_ENV}
       APP_PORT: ${APP_PORT}
       WELCOME_MSG: ${WELCOME_MSG}
+      COLOR: ${COLOR}  # This line must be added
